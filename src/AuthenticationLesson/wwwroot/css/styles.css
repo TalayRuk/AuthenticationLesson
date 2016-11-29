@@ -1,0 +1,144 @@
+﻿/*!
+ * Start Bootstrap - Portfolio Item (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 40px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.space-sm {
+    margin-top:15px;
+}
+.offset-sm {
+    margin-top:15px;
+}
+.text-small {
+    font-size:xx-small;
+    color:blue;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+  height: auto;
+  padding-top: 90px;
+  color: black;
+  background: url(https://thumbs.dreamstime.com/z/gummy-candy-background-made-colorful-bears-herries-48704897.jpg) no-repeat bottom center scroll;
+  background-color: white;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro .intro-body {
+  vertical-align: middle;
+  text-shadow: 0px 0px 8px white;
+}
+.intro .intro-body .intro-text {
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  padding-left: 15px;
+  padding: 15px;
+  width: 380px;
+}
+@media (min-width: 768px) {
+  .intro {
+    height: 100vh;
+  }
+}
+.z-index-10 {
+  z-index: 10;
+}
+.z-index-5 {
+  z-index: 5;
+}
+.gradient-border-top {
+  height: 50px;
+  width: 380px;
+  background: transparent;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(red, yellow);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, yellow);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, yellow);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.8));
+  /* Standard syntax */
+}
+.gradient-border-bot {
+  height: 50px;
+  width: 380px;
+  background: transparent;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(red, yellow);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, yellow);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, yellow);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
+  /* Standard syntax */
+}
+.space-lg{
+    margin-top:100px;
+}
+.img-buy-size {
+    height: 150px;
+    width: 320px;
+}
+.img-size-sm {
+    height: 50px;
+    width: 60px;
+}
+.product-view {
+    margin-top: 10px;
+    margin-right:20px; 
+}
+.pull-left {
+    margin-right:20px;
+}
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
