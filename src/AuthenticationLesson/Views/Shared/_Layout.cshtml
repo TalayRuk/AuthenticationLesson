@@ -33,6 +33,15 @@
                     <li>
                         @Html.ActionLink("Log in", "Login", "Account")
                     </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            @Html.ActionLink("See To Do List", "Index", "Todo")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Add Item", "Create", "Todo")
+                        </li>
+                    }
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

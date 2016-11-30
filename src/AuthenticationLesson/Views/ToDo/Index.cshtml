@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<AuthenticationLesson.Models.Item>
+@using System.Security.Claims
+
+<div class="container">
+    <h2>Here is your list of tasks, @User.Identity.Name</h2>
+    @if (Model.Any())
+    {
+        <ul>
+            @foreach (var listItem in Model)
+            {
+                <li>@listItem.Description</li>
+            }
+        </ul>
+    }
+    <hr />
+    @Html.ActionLink("Create new", "Create")
+</div>
