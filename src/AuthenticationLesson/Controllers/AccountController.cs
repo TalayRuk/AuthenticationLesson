@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using AuthenticationLesson.Models;
 using AuthenticationLesson.ViewModels;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -33,6 +35,10 @@ namespace AuthenticationLesson.Controllers
         {
             return View();
         }
+        //public IActionResult ErrorPage()
+        //{
+        //    return View();
+        //}
 
         [HttpPost]
         public async Task<IActionResult> Register (RegisterViewModel model)
@@ -75,5 +81,31 @@ namespace AuthenticationLesson.Controllers
             return RedirectToAction("Index");
         }
 
+        // GET: /Roles/Create
+        public ActionResult CreateRole()
+        {
+            return View();
+        }
+
+        //
+        // POST: /Roles/Create
+        [HttpPost]
+        public ActionResult CreateRole(FormCollection collection)
+        {
+            try
+            {
+                _db.Roles.Add(new IdentityRole()
+                {
+                    Name = collection["RoleName"]
+                });
+                _db.SaveChanges();
+                ViewBag.ResultMessage = "Role created successfully !";
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
     }
 }
