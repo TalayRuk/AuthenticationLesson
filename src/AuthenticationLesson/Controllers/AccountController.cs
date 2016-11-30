@@ -87,25 +87,5 @@ namespace AuthenticationLesson.Controllers
             return View();
         }
 
-        //
-        // POST: /Roles/Create
-        [HttpPost]
-        public ActionResult CreateRole(FormCollection collection)
-        {
-            try
-            {
-                _db.Roles.Add(new IdentityRole()
-                {
-                    Name = collection["RoleName"]
-                });
-                _db.SaveChanges();
-                ViewBag.ResultMessage = "Role created successfully !";
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
